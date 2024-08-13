@@ -23,8 +23,8 @@ const Navbar = () => {
                         <>
                             <Link style={{textDecoration: 'none'}} to='/logout'>
                                 <button className="w-34 h-12 border border-[#3f47b3] rounded-full text-[#000000] text-lg font-medium bg-white hover:bg-gray-100 focus:outline-none md:w-28 md:h-10 md:text-base">Logout</button>
+                                <span className="text-lg font-medium text-gray-700 ml-4">{user.username}</span>
                             </Link>
-                            <span className="text-lg font-medium text-gray-700 ml-4">{user.username}</span>
                         </>
 
                     ) : (
